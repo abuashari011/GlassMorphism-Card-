@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    background-color: #161623;
+}
+.card-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 10%;
+    margin-right: 0px;
+    position: relative;
+    z-index: 1;
+   
+   
+}
+body::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00,#f0f);
+    clip-path: circle(50% at right 95%);
+}
+
+.h1 {
+    z-index: 1;
+    margin-top: 2px;
+    margin-left: 659px;
+    color: rgba(241, 238, 238, 0.691);
+    padding: 20px;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+
+
+body::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#e91e63);
+    clip-path: circle(35% at -1% 4%);
+}
+.card {
+    width: 300px;
+    float:left ;
+    margin-left: 0px;
+    padding: 20px;
+    
+}
+.big-num {
+    color: rgb(172, 172, 172);
+    font-size: 100px;
+    text-align: center;
+}
+.text {
+    color: rgb(216, 216, 216);
+}
+.text h1 {
+    text-align: center;
+    padding: 10px;
+}
+.text p {
+    text-align: left;
+    font-size: 30px;
+    padding: 20px;
+    font-size: 24px;
+    padding-left: 20px;
+}
+.card {
+    height: 500px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    
+}
+.card1 {
+    margin-right: 70px;
+}
+.card2 {
+    margin-right: 90px;
+}
+.read a {
+    color: black;
+    background: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-align: center;
+    margin-left: 35px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.card3 h1 {
+    text-align: left;
+    font-size: 40px;
+}
+.card {
+    background: rgba(255,255,255,0.1);
+    border-left:1px solid rgba(255,255,255,0.5) ;
+    border-top:1px solid rgba(255,255,255,0.5) ;
+    backdrop-filter: blur(5px);
+}
+.card .big-num {
+    position: absolute;
+    top: -0px;
+    right: 30px;
+    color: rgba(255,255,255,0.05);
+    font-size: 8em;
+}
+.text {
+    margin-top: 80px;
+    opacity: 1;
+}
+.hover {
+    transform: translatey(300px);
+    transition: .3s;
+    opacity: 0;
+}
+.card:hover .hover {
+    transform: translatey(0px);
+    opacity: 1;
+}
